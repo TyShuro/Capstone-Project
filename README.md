@@ -1,45 +1,28 @@
-# Capstone-Project
-Predictive Analytics for Credit Risk Assessment in Consumer Banking
 
-# Description
+# Credit Card Default Prediction
+
+## Project Overview
+This project aims to predict credit card defaults, helping financial institutions minimize losses while supporting consumers to manage their debt more effectively. By leveraging historical credit data, the project develops a predictive model to identify individuals at risk of defaulting on their credit card payments.
+
+## Problem Statement
+Predicting credit card defaults is crucial for both lenders and borrowers. For lenders, it helps in mitigating financial risks and for borrowers, in avoiding debt traps. The goal of this project is to accurately forecast the likelihood of default, enabling proactive management of credit risks.
+
+## Description
 The objective is to develop a predictive model that accurately identifies individuals at risk of defaulting on their credit card payments. This tool will aid in proactive risk management and enhance decision-making processes related to credit issuance and management.
 
 
-# Source Data
+## Source Data
 https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients
 
-# Content & Explanation
-I have two tables to be merged by ID:
+## Data Exploration and Analysis
+The dataset includes demographic information, credit data, and historical payment records of clients from a financial institution. Initial analysis focused on cleaning the data, handling missing values, and exploring the distribution and relationships of variables.
 
-application_record.csv		
-Feature name	Explanation	Remarks
-ID	Client number	
-CODE_GENDER	Gender	
-FLAG_OWN_CAR	Is there a car	
-FLAG_OWN_REALTY	Is there a property	
-CNT_CHILDREN	Number of children	
-AMT_INCOME_TOTAL	Annual income	
-NAME_INCOME_TYPE	Income category	
-NAME_EDUCATION_TYPE	Education level	
-NAME_FAMILY_STATUS	Marital status	
-NAME_HOUSING_TYPE	Way of living	
-DAYS_BIRTH	Birthday	Count backwards from current day (0), -1 means yesterday
-DAYS_EMPLOYED	Start date of employment	Count backwards from current day(0). If positive, it means the person currently unemployed.
-FLAG_MOBIL	Is there a mobile phone	
-FLAG_WORK_PHONE	Is there a work phone	
-FLAG_PHONE	Is there a phone	
-FLAG_EMAIL	Is there an email	
-OCCUPATION_TYPE	Occupation	
-CNT_FAM_MEMBERS	Family size	
+## Feature Engineering and Selection
+We enhanced the dataset with engineered features such as average payment status and late payment counts to capture trends in payment behavior. Selection of relevant features was based on their correlation with the default event and their importance as determined by preliminary model evaluations.
 
-credit_record.csv		
-Feature name	Explanation	Remarks
-ID	Client number	
-MONTHS_BALANCE	Record month	The month of the extracted data is the starting point, backwards, 0 is the current month, -1 is the previous month, and so on
-STATUS	Status	0: 1-29 days past due 1: 30-59 days past due 2: 60-89 days overdue 3: 90-119 days overdue 4: 120-149 days overdue 5: Overdue or bad debts, write-offs for more than 150 days C: paid off that month X: No loan for the month
+## Model Development and Validation
+Several machine learning models were experimented with, including Logistic Regression, Random Forest, and Gradient Boosting. The models were evaluated based on accuracy, precision, recall, F1 score, and ROC AUC. Gradient Boosting emerged as the most promising model, further validated through cross-validation techniques.
 
-# Tasks / Ideas
+## Insights and Findings
+Key insights from the analysis and modeling were documented, highlighting significant predictors of default and patterns discovered in the data.
 
-Perform exploratory data analysis to identify key factors influencing credit card approvals.
-Build a classification model to predict approval outcomes.
-Use clustering techniques to segment applicants into distinct groups based on their financial profiles.
