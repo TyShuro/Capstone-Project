@@ -4,10 +4,8 @@ Predictive Analytics for Credit Risk Assessment in Consumer Banking
 # Description
 This project aims to leverage predictive analytics for credit risk assessment, which is a critical function in consumer banking. By analyzing historical loan data, the project seeks to build a predictive model that can assess the risk associated with loan applicants. This model would help in making informed lending decisions, thereby reducing the risk of defaults and improving financial stability.
 
-# Source Data
-https://www.kaggle.com/datasets/rikdifos/credit-card-approval-prediction
 
-# Sample Data
+# Source Data
 https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients
 
 # Content & Explanation
