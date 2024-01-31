@@ -8,7 +8,7 @@ This project aims to leverage predictive analytics for credit risk assessment, w
 https://www.kaggle.com/datasets/rikdifos/credit-card-approval-prediction
 
 # Sample Data
-![image](https://github.com/TyShuro/Capstone-Project/assets/115968439/3fc2996d-7a62-4a47-870f-fe1c1dda485f)
+https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients
 
 # Content & Explanation
 I have two tables to be merged by ID:
